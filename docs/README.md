@@ -1,4 +1,4 @@
-##Overview
+Overview
 
 Portfolio Optimizer is a comprehensive tool designed to help investors and financial analysts optimize their investment portfolios based on historical stock data. Leveraging the power of Python's Flask framework for the backend and JavaFX for the frontend, this application provides a seamless experience for fetching stock data, performing mean-variance optimization, and displaying the optimized portfolio along with key performance metrics.
 Features
