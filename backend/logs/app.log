@@ -1,0 +1,30 @@
+2024-10-01 17:54:18,980 INFO __main__ Thread-1 (process_request_thread) : Optimizing portfolio for stocks: ['AAPL'] with target return: 0.1
+2024-10-01 17:54:20,128 ERROR __main__ Thread-1 (process_request_thread) : An unexpected error occurred in /optimize endpoint.
+Traceback (most recent call last):
+  File "D:\ILIAS\PortfolioOptimizer\backend\app.py", line 123, in optimize
+    optimized_weights = optimized_result['weights']
+                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2024-10-01 18:01:21,755 INFO __main__ Thread-1 (process_request_thread) : Optimizing portfolio for stocks: ['MSFT'] with target return: 0.1
+2024-10-01 18:01:25,640 INFO __main__ Thread-1 (process_request_thread) : Optimization successful.
+2024-10-01 18:01:33,573 INFO __main__ Thread-3 (process_request_thread) : Optimizing portfolio for stocks: ['MSFT', 'AAPL', 'UBER'] with target return: 0.1
+2024-10-01 18:01:35,025 INFO __main__ Thread-3 (process_request_thread) : Optimization successful.
+2024-10-01 18:01:46,363 INFO __main__ Thread-7 (process_request_thread) : Optimizing portfolio for stocks: ['MSFT', 'AAPL', 'UBER', 'BIDU'] with target return: 0.1
+2024-10-01 18:01:47,874 INFO __main__ Thread-7 (process_request_thread) : Optimization successful.
+2024-10-01 18:02:06,468 INFO __main__ Thread-12 (process_request_thread) : Optimizing portfolio for stocks: ['MSFT', 'AAPL', 'UBER', 'BIDU', 'BTC'] with target return: 0.1
+2024-10-01 18:02:08,202 INFO __main__ Thread-12 (process_request_thread) : Optimization successful.
+2024-10-01 18:02:08,211 INFO __main__ Thread-18 (process_request_thread) : Optimizing portfolio for stocks: ['MSFT', 'AAPL', 'UBER', 'BIDU', 'BTC'] with target return: 0.1
+2024-10-01 18:02:10,060 INFO __main__ Thread-18 (process_request_thread) : Optimization successful.
+2024-10-01 18:02:23,639 INFO __main__ Thread-24 (process_request_thread) : Optimizing portfolio for stocks: ['XRP', 'ETH', 'BTC'] with target return: 0.1
+2024-10-01 18:02:24,797 ERROR __main__ Thread-24 (process_request_thread) : An unexpected error occurred in /optimize endpoint.
+Traceback (most recent call last):
+  File "D:\ILIAS\PortfolioOptimizer\backend\app.py", line 104, in optimize
+    returns = calculate_daily_returns(stock_data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ILIAS\PortfolioOptimizer\backend\utils.py", line 28, in calculate_daily_returns
+    raise ValueError("Daily returns calculation resulted in an empty DataFrame.")
+ValueError: Daily returns calculation resulted in an empty DataFrame.
+2024-10-01 18:02:35,893 INFO __main__ Thread-28 (process_request_thread) : Optimizing portfolio for stocks: ['ETH', 'BTC'] with target return: 0.1
+2024-10-01 18:02:36,972 ERROR __main__ Thread-28 (process_request_thread) : InternalServerError: Optimization failed or no solution found.
+2024-10-01 18:02:43,911 INFO __main__ Thread-31 (process_request_thread) : Optimizing portfolio for stocks: ['MSFT', 'AAPL'] with target return: 0.1
+2024-10-01 18:02:45,162 INFO __main__ Thread-31 (process_request_thread) : Optimization successful.
